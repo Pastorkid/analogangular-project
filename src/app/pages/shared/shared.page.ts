@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import ProductService from 'src/app/services/productservice/product.service';
 
 @Component({
   selector: 'app-shared',

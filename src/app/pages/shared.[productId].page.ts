@@ -7,8 +7,8 @@ import { map } from 'rxjs';
   selector: 'app-sharedproductId-details',
   standalone: true,
   imports: [AsyncPipe, JsonPipe],
-  templateUrl: './[productId].page.html',
-  styleUrls: ['./[productId].page.scss'],
+  templateUrl: './shared.[productId].page.html',
+  styleUrls: ['./shared.[productId].page.scss'],
 })
 export default class SharedProductIdComponent {
   private readonly route = injectActivatedRoute();

@@ -4,7 +4,10 @@ import { provideFileRouter } from '@analogjs/router';
 
 import { AppComponent } from './app/app.component';
 import { mainProviders } from './main.providers';
+import { provideHttpClient } from '@angular/common/http';
 
 bootstrapApplication(AppComponent, {
+  //add httclient module
+
   providers: [provideFileRouter(), ...mainProviders],
 });
