@@ -1,0 +1,23 @@
+<div class="flex justify-center items-center">
+  <form
+    class="form w-full flex justify-center items-center flex-col"
+    [formGroup]="form"
+    (ngSubmit)="onSubmit()"
+  >
+    <formly-form
+      [model]="model"
+      [fields]="fields"
+      [options]="options"
+      [form]="form"
+    ></formly-form>
+    <div class="flex justify-center md:justify-start">
+      <button
+        type="submit"
+        class="md:w-[400px] text-white bg-sky-600 h-[40px] cursor-pointer rounded-[8px] w-[280px] font-semibold text-[14px] mt-[30px]"
+        [disabled]="!form.valid"
+      >
+        SIGN IN
+      </button>
+    </div>
+  </form>
+</div>
