@@ -33,7 +33,7 @@ export const routeMeta: RouteMeta = {
 })
 export class AuthformComponent {
   form = new FormGroup({});
-  model = { name: '', email: '', password: '' };
+  model = { email: '', password: '' };
   options: FormlyFormOptions = {
     formState: {
       awesomeIsForced: false,
@@ -42,35 +42,6 @@ export class AuthformComponent {
   error!: { state: string; message: string };
   // Configuration of Formly formfield
   fields: FormlyFieldConfig[] = [
-    {
-      fieldGroupClassName:
-        'flex justify-between items-start gap-3 flex-col w-full',
-      fieldGroup: [
-        {
-          template: `<strong class="text-gray-900">Name</strong>
-          `,
-          className: 'text-[#1C3738] md:ml-0 ml-[5%] mt-5 font-medium',
-        },
-        {
-          className:
-            'w-[90%] mx-[5%] md:mx-0 md:w-[400px] h-[50px] rounded-[5px] bg-white pl-4 border-[1.5px]  text-gray-900 ring-1 ring-inset ring-gray-300 border-0 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6',
-          type: 'input',
-          key: 'name',
-          templateOptions: {
-            label: 'Name',
-            placeholder: 'Enter your name',
-            required: true,
-            type: 'name',
-          },
-          validation: {
-            messages: {
-              required: 'Name is required',
-            },
-          },
-        },
-      ],
-    },
-
     {
       fieldGroupClassName:
         'flex justify-between items-start gap-3 flex-col w-full',

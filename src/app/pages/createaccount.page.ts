@@ -4,6 +4,6 @@ import { AuthformloginComponent } from '../component/authformlogin.component';
 @Component({
   standalone: true,
   imports: [AuthformloginComponent],
-  template: `<app-authformlogin />`,
+  templateUrl: './createaccount.page.html',
 })
 export default class CreateAccountComponent {}
