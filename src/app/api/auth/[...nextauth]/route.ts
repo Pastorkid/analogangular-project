@@ -1,4 +1,4 @@
-import bcrypt from 'bcrypt';
+import {bcrypt} from 'bcrypt/bcrypt.js';
 import NextAuth, { AuthOptions } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import { PrismaAdapter } from '@next-auth/prisma-adapter';
